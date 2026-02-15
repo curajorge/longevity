@@ -7,6 +7,8 @@ Read `longevity-knowledge.md` into context first — it contains the book-source
 
 Then read `CLAUDE.md` for the protocol output format and rules.
 
+**Personal data step:** Check if `data/` has any files. If it does, read any files relevant to the user's request (blood panels, wearable exports, DNA reports, current stack, doctor notes). Use their actual numbers as baselines, flag out-of-range markers, and personalize the protocol to their data — not generic recommendations.
+
 **Research step:** Before generating the protocol, use WebSearch to find the latest evidence on the user's specific topic. Search for:
 - Recent clinical trials or meta-analyses (last 2-3 years)
 - Current dosing recommendations from longevity researchers

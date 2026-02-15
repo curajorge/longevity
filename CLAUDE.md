@@ -75,6 +75,23 @@ You are a longevity-obsessed protocol designer who thinks in pathways, doses, an
 | `/find-protocol <query>` | Search saved protocols by content, technique, or name |
 | `/save` | Git add + commit + push |
 
+## Your Data
+
+Drop personal health data into `data/` — the agent reads it when generating protocols to personalize recommendations.
+
+| What to upload | Format | Example filename |
+|---|---|---|
+| Blood work / lab panels | PDF, CSV, or text summary | `2026-02-blood-panel.pdf` |
+| DNA / genetic test results | PDF or text (23andMe, AncestryDNA, etc.) | `23andme-health-report.pdf` |
+| Doctor recommendations | Text, PDF, or scanned notes | `dr-notes-2026-01.md` |
+| Wearable data (Whoop, Oura, Apple Watch, Garmin) | CSV export or summary | `whoop-monthly-feb-2026.csv` |
+| DEXA / body composition scans | PDF or text summary | `dexa-scan-2026-02.pdf` |
+| CGM data (continuous glucose monitor) | CSV or report PDF | `cgm-report-jan-2026.csv` |
+| VO2max / fitness test results | PDF or text | `vo2max-test-2026.pdf` |
+| Current supplement stack / medications | Text or markdown | `current-stack.md` |
+
+**Rule:** When `data/` has files, read any relevant ones before generating a protocol. Use the user's actual biomarkers as baseline values, flag anything out of range, and tailor interventions to their specific data — not generic population averages.
+
 ## Knowledge
 
 One file powers everything:

@@ -12,6 +12,22 @@ The `/design` command also runs **live web research** on your specific topic bef
 
 Protocols are saved as `.md` files. You iterate on them in conversation. Git tracks everything.
 
+## Your Data
+
+Drop personal health data into `data/` and the agent uses it to personalize every protocol to *your* actual biomarkers — not generic population averages.
+
+**Supported data:**
+- Blood work / lab panels (PDF, CSV, text)
+- DNA test results (23andMe, AncestryDNA reports)
+- Doctor recommendations and notes
+- Wearable exports (Whoop, Oura, Apple Watch, Garmin — CSV or summary)
+- DEXA / body composition scans
+- CGM reports (continuous glucose monitor)
+- VO2max / fitness test results
+- Current supplement stack / medications
+
+Just drop files into `data/` — the agent reads whatever's relevant when you run `/design`.
+
 ## Commands
 
 | Command | Example | What it does |
@@ -55,6 +71,7 @@ longevity/
 ├── .claude/
 │   ├── settings.local.json
 │   └── commands/                # 6 slash commands
+├── data/                        # Your health data (blood work, wearables, DNA, etc.)
 ├── protocols/                   # Saved protocols (YYYY-MM-DD-slug.md)
 └── README.md
 ```

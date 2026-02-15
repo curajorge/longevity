@@ -1,0 +1,3 @@
+# Personal health data — keep local, never push to remote
+data/*
+!data/.gitkeep
